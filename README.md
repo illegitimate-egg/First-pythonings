@@ -3,8 +3,10 @@
 This is a basic machine language interpreter based on the little man computer. It has a slightly increased instruction set allowing for use of a non standard print character instruction.
 <br>
 XX signifies a memory address.
+Available instructions:
 
 | ML  | ASM     | Function                                                                        |
+|-----|---------|---------------------------------------------------------------------------------|
 | 901 | INP     | Take 1 character of user input                                                  |
 | 902 | OUT     | Print the value stored in the accumulator                                       |
 | 903 | CHAROUT | Print the ASCII translation of the character stored in the accumulator          |
@@ -17,6 +19,9 @@ XX signifies a memory address.
 | 6xx | BRA     | Branch to XX                                                                    |
 | 000 | HALT    | Stop execution                                                                  |
 
-| Name | Register        | Function |
+Available registers:
+
+| Name | Register        | Function                                                                 |
+|------|-----------------|--------------------------------------------------------------------------|
 | ACC  | Accumulator     | Stores the result of calculations, is also the target of out and charout |
 | PC   | Program Counter | Stores the memory address of the current instruction                     |
